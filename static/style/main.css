@@ -1,0 +1,21 @@
+.elm-overlay {
+	z-index: 1000;
+}
+
+#app-wrapper {
+}
+
+#plot {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#tempTable {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+
+}
