@@ -2,7 +2,8 @@
   "app_version": 1,
   "scripts": {
     "dev": "webpack-dev-server --hot --port 3003 --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "production": "node server"
   },
   "dependencies": {
     "autoprefixer": "^7.1.4",
