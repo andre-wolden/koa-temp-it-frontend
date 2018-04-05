@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "webpack-dev-server --hot --port 3003 --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "production": "node server"
+    "start": "npm run build && node server.js"
   },
   "dependencies": {
     "autoprefixer": "^7.1.4",
