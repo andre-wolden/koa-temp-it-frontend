@@ -5,6 +5,8 @@ const app = express();
 const port = process.env.PORT ? process.env.PORT : 8010;
 const build = `${__dirname}/build`;
 
+console.log("Dette er porten: " + port)
+
 app.use(express.static(build));
 
 app.get('*', function response(req, res) {
