@@ -10,8 +10,8 @@ import RemoteData
 
 fetchAllTempValues : Cmd Msg
 fetchAllTempValues =
-    -- Http.get "http://localhost:8080/temp/all" tempValuesDecoder
-    Http.get "https://salty-forest-59491.herokuapp.com/temp/all" tempValuesDecoder
+    Http.get "http://localhost:8080/temp/all" tempValuesDecoder
+        -- Http.get "https://salty-forest-59491.herokuapp.com/temp/all" tempValuesDecoder
         |> RemoteData.sendRequest
         |> Cmd.map OnReceivedTempValues
 
