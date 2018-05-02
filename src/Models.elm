@@ -19,7 +19,7 @@ type alias TempValues =
 
 type alias TempValue =
     { timestamp : TimeStamp
-    , temp : Int
+    , temp : Float
     , id : Int
     , uploaded : Bool
     }

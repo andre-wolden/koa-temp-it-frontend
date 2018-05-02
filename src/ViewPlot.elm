@@ -42,7 +42,7 @@ stuff tempValue =
         timestamp =
             tempValue.timestamp
     in
-        DataPoint (toFloat tempValue.id) (toFloat tempValue.temp)
+        DataPoint (toFloat tempValue.id) (tempValue.temp)
 
 
 type alias DataPoint =
