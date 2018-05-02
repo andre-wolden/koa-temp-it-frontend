@@ -24,7 +24,7 @@ tempValuesDecoder =
 tempValueDecoder : Decode.Decoder TempValue
 tempValueDecoder =
     decode TempValue
-        |> required "timestamp" decodeTimeStamp
+        |> required "timestamp" Decode.string
         |> required "temp" Decode.float
         |> required "id" Decode.int
         |> required "uploaded" Decode.bool

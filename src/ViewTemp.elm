@@ -43,25 +43,27 @@ viewTempValue tempValue =
             tempValue.timestamp
     in
         tr []
-            [ td []
-                [ text
-                    (toString (timestamp.year)
-                        ++ "-"
-                        ++ toString (timestamp.monthValue)
-                        ++ "-"
-                        ++ toString (timestamp.dayOfMonth)
-                    )
-                ]
-            , td
-                []
-                [ text
-                    (toString (timestamp.hour)
-                        ++ ":"
-                        ++ toString (timestamp.minute)
-                        ++ ":"
-                        ++ toString (timestamp.second)
-                    )
-                ]
+            [ td [] [ text timestamp ]
+
+            -- , td []
+            --     [ text
+            --         (toString (timestamp.year)
+            --             ++ "-"
+            --             ++ toString (timestamp.monthValue)
+            --             ++ "-"
+            --             ++ toString (timestamp.dayOfMonth)
+            --         )
+            --     ]
+            -- , td
+            --     []
+            --     [ text
+            --         (toString (timestamp.hour)
+            --             ++ ":"
+            --             ++ toString (timestamp.minute)
+            --             ++ ":"
+            --             ++ toString (timestamp.second)
+            --         )
+            --     ]
             , td
                 [ class "text-right" ]
                 [ text (toString tempValue.temp)
